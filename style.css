@@ -1,0 +1,216 @@
+html, 
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: "Cubano-Regular";
+    background: url(../img/pattern.jpg) center center;
+}
+
+/* FONT FACES */
+@font-face {
+    font-family: "Cubano-Regular";
+    src: local("Cubano-Regular.otf"), url("Cubano-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Nunito-Regular";
+    src: local("Nunito-Regular.otf"), url("Nunito-Regular.otf") format("opentype");
+}
+#cover {
+    height: 100%;
+    background: url(../img/trees.jpg)center;
+    background-size: cover;
+    color: aliceblue;
+}
+.wall-sticker {
+    background: rgba(0,0,0,0.4);
+    padding: 140px 200px 160px 30px;
+    font-family: "Cubano-Regular";
+    font-size: 50px;
+    color: aliceblue
+}
+.moto {
+    font-family: "Cubano-Regular";
+    margin-top: 150px;
+    margin-left: 150px;
+    text-align: center;
+}
+
+/* BUTTON */
+.btn-lg {
+    font-family: "Nunito-Regular";
+    background: transparent;
+    border: 1px solid rgba(19, 128, 26, 1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn-lg: hover
+.btn-lg:focus
+.btn-lg:active {
+    background-color: rgba(19, 128, 36, 0.54);
+    border: 1px solid rgba(19, 128, 26, 1);
+    transition: 0.5s;
+}
+.svg-inline--fa {
+    margin-left: 23rem;
+    margin-top: 50px;
+    font-size: 8rem;
+    color: green;
+    transition: 0.5s;
+}
+
+.svg-inline--fa: hover {
+    color: rgba(19, 128, 36, 0.54);
+    transition: 0.5s;
+}
+.parallax-btn {
+    width: 200px;
+    margin: 30px auto 0 auto;
+}
+
+/* SPAN */
+.bold-green {
+    color: rgba(19, 128, 26, 1);
+}
+
+.green-underline {
+    border-bottom: 1px solid rgba(19, 128, 26, 1);
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: Cubano-Regular;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+#main-nav {
+    font-family: Nunito-Regular;
+    padding:2px 4px 2px;
+}
+
+#main-nav li a {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
+#main-nav li a:hover {
+    border-bottom: 1px solid green;
+    transition: 0.5s;
+}
+
+/* SECTION FEATURES */
+.section-features {
+    padding: 2rem 0;
+}
+.icon {
+    color: black;
+    margin-left: auto;
+    transition: 0.3s;
+}
+.icon: hover {
+    color: rgba(19, 128, 26, 1);
+    transition: 0.3s;
+}
+.square {
+    text-align: center;
+}
+.mine {
+    text-align: center;
+}
+.under-heading {
+    text-align: center;
+}
+.space {
+    border:  1px solid rgba(19, 128, 26, 1);
+    width: 150px;
+}
+.square p {
+    font-family: "Nunito-Regular";
+}
+.svg-inline--fa {
+    color: black;
+    font-size: 0.9rem;
+    margin-left: auto
+}
+/* SECTION TIMELINE */
+
+.section-timeline {
+    background-color: ghostwhite;
+    padding-top: 5rem;
+}
+.timeline {
+    list-style: none;
+    padding: 20px 0 80px;
+    padding-top: 50px;
+    position: relative;
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline > li .timeline-panel {
+    width: 50%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline p {
+    font-family: "nunito-regular";
+}
+.timeline > li:not(.timeline-inverted) {
+    padding-right: 9%;
+}
+.timeline > li.timeline-inverted {
+    padding-left: 90px;
+}
+.timeline > li >.timeline-badge {
+    font-size: 1rem; !important;
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -25px;
+    background-color: green;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+    float:right;
+}
+/* SECTION PARALLAX */
+
+#section-parallax {
+    text-align: center;
+    background: url(../img/trees.jpg) center repeat fixed;
+    color: white;
+    background-size: cover;
+    padding: 140px 0;
+}
